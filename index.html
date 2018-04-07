@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <head>
+        <script src="tileExtruder.js"></script>
+    </head>
+    <style>
+        canvas {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            test = new tileExtruder(true);
+            test.loadImage();
+            console.log("DRAW")
+            test.drawImage();
+            //console.log(test.img.complete);
+            //    setTimeout(()=> test.drawImage(), 0);
+
+
+        });
+    </script>
+</body>
+
+</html>

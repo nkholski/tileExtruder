@@ -1,0 +1,40 @@
+{
+  "name": "tile-extruder",
+  "version": "0.0.0",
+  "description": "Simple tool to extrude tiles to prevent bleeding in WebGL. Used with node or as phaser 3 plugin.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
+    "node-build": "webpack -p --progress --mode production --config webpack.config.node.js",
+    "node-dev": "webpack --progress --mode development --config webpack.config.node.js",
+    "phaser-build": "webpack -p --progress --mode production --config webpack.config.phaser.js",
+    "phaser-dev": "webpack --progress --mode development --config webpack.config.phaser.js",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "x"
+  },
+  "keywords": [
+    "tilemap",
+    "tiled",
+    "webgl",
+    "tile",
+    "padding"
+  ],
+  "author": "Niklas Berg <com@niklasberg.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "canvas": "^1.6.10",
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "graceful-fs": "^4.1.11",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.14",
+    "webpack-merge": "^4.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
